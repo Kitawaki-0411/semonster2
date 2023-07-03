@@ -11,4 +11,9 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("おはよう世界", classUnderTest.getGreeting());
     }
+     @Test public void appHasAMonsters() {
+        Monster classUnderTest = new Monster();
+        assertNotNull("デュラハン", classUnderTest.printMonster(0));
+        assertNotNull(4, classUnderTest.printRare(0));
+    }
 }
