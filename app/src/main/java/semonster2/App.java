@@ -17,13 +17,23 @@ public class Monster{
     String monster_name;
     int rare;
 
-    public printMonster(int monster_number){
+    public String printMonster(int monster_number){
         String monsters[] = {"デュラハン","ドラゴン","スライム"};
         return monsters[monster_number];
     }
 
-    public printRare(int rare_number){
+    public int printRare(int rare_number){
         int rare[] = {4,5,1};
         return rare[rare_number];
+    }
+       public  String  superMonster(int monster_number){
+        String super_monsters[];
+        super_monsters[monster_number] = "super" + printMonster(monster_number);
+        return super_monsters[monster_number];
+    }
+    public  int  supertRare(int rare_number){
+        int super_rare[];
+        super_rare[rare_number] = 4 +  printRare(rare_number);
+        return super_rare[rare_number];
     }
 }
