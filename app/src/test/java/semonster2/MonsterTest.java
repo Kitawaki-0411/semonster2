@@ -5,10 +5,12 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 public class MonsterTest {
-    @Test public void appHasAMonsters() {
+    @Test public void appHasAGreeting() {
         Monster classUnderTest = new Monster();
-        assertNotNull("デュラハン", classUnderTest.printMonster(0));
-        assertNotNull(4, classUnderTest.printRare(0));
+
+        int monster_number = 0;
+        assertNotNull("デュラハン", classUnderTest.printMonster(monster_number));
+        assertNotNull("4", classUnderTest.printRare(monster_number));
+        assertNotNull("20", classUnderTest.printHP(classUnderTest.printRare(monster_number), monster_number));
     }
-    
 }
