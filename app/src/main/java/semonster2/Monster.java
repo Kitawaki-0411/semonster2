@@ -45,5 +45,10 @@ public class Monster {
         return hp;
     }
 
-        
+    public  String  superMonster(int monster_number){
+        return "super" + printMonster(monster_number);
+    }
+    public  int  supertRare(int rare_number){
+        return 4 +  printRare(rare_number);
+    }
 }
