@@ -13,17 +13,3 @@ public class App {
     }
 }
 
-public class Monster{
-    String monster_name;
-    int rare;
-
-    public printMonster(int monster_number){
-        String monsters[] = {"デュラハン","ドラゴン","スライム"};
-        return monsters[monster_number];
-    }
-
-    public printRare(int rare_number){
-        int rare[] = {4,5,1};
-        return rare[rare_number];
-    }
-}
