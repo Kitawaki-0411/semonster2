@@ -11,6 +11,7 @@ public class MonsterTest {
         int monster_number = 0;
         assertNotNull("デュラハン", classUnderTest.printMonster(monster_number));
         assertNotNull("4", classUnderTest.printRare(monster_number));
-        assertNotNull("20", classUnderTest.printHP(classUnderTest.printRare(monster_number), monster_number));
+        assertNotNull("superデュラハン", classUnderTest.superMonster(monster_number));
+        assertNotNull("8", classUnderTest.supertRare(monster_number));
     }
 }
